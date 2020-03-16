@@ -6,7 +6,7 @@ document.getElementById("countButton").onclick = function () {
     typedText = typedText.replace(/[^a-z'\s]+/g, "");
     word = typedText.split(/\s/);
 
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < typedText.length; i++) {
         currentLetter = typedText[i];
         if (letterCounts[currentLetter] === undefined) {
             letterCounts[currentLetter] = 1;
